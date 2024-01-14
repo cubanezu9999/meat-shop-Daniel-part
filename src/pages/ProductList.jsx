@@ -67,6 +67,7 @@ function ProductList() {
       <Navbar searchvalue={search} />
       <div className={classes.container}>
         <h1 className={classes.title}>Products List</h1>
+
         <div className={classes.subcontainer}>
           {subcategories.map((sub, index) => (
             <p
@@ -77,6 +78,7 @@ function ProductList() {
             </p>
           ))}
         </div>
+
         <div className={classes.productcontainer}>
           {displayProducts.map((prod, index) => (
             <ProductCard
@@ -84,6 +86,7 @@ function ProductList() {
               name={prod.name}
               price={prod.price}
               unit={prod.unit}
+              imageUrl={prod.imageUrl}
             />
           ))}
         </div>

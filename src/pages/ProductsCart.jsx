@@ -47,6 +47,7 @@ function ProductsCart() {
         <table className={classes.table}>
           <thead className={classes.thead}>
             <tr>
+              <th>Image</th>
               <th className={classes.th}>Product Name</th>
               <th className={classes.th}>Quantity</th>
               <th className={classes.th}>Price</th>
@@ -59,6 +60,7 @@ function ProductsCart() {
               return (
                 <CheckoutCard
                   key={index}
+                  imageUrl={prod.imageUrl}
                   name={prod.productName}
                   quantity={prod.quantity}
                   price={prod.productPrice}

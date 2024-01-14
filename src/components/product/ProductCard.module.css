@@ -26,12 +26,13 @@
 .proddetails {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
-  width: 250px;
+  width: 350px;
 }
 
 .p {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .price {
@@ -43,4 +44,10 @@
 
 .img:hover {
   transform: scale(1.05);
+}
+
+.imageUrl {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
 }
